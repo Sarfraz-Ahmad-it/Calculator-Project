@@ -43,7 +43,7 @@ button{
     cursor: pointer;
     font-size: 25px;
     background-color: rgb(45, 43, 43);
-    color: white;
+    color: #ffff;
 }
 
 .sameColor{
