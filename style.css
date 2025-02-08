@@ -10,7 +10,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(32, 31, 31);
+    /* background-color: rgb(32, 31, 31); */
 }
 
 .calculator{
@@ -18,7 +18,7 @@ body{
     padding: 20px;
     border-radius: 20px;
     background: transparent;
-    box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+    background-color: black;
 }
 
 input{
@@ -42,18 +42,18 @@ button{
     border-radius: 50%;
     cursor: pointer;
     font-size: 25px;
-    background-color: rgb(45, 43, 43);
+    background-color: #2d2b2b;
     color: #ffff;
 }
 
 .sameColor{
-    color: rgb(39, 225, 39);
+    color: rgb(37, 227, 37);
     font-size: 35px;
 }
 
 
 .equalBtn{
-    background-color: rgb(39, 225, 39);
+    background-color: rgb(52, 239, 52);
     font-size: 40px;
 }
 
