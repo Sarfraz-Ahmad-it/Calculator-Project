@@ -1,28 +1,36 @@
 let display = document.getElementById ('inputBox');
+console.log(display);
 let button = document.querySelectorAll('button');
+console.log(button);
 buttonArray = Array.from(button);
+console.log(buttonArray);
 let string = '';
 
 buttonArray.forEach(function(btn) {
     
+    
     btn.addEventListener('click', function(event){
-
-        if(event.target.innerHTML == 'Del'){
+        let btnText = event.target.innerHTML;
+        if(btnText == 'Del'){
             string = string.substring(0, string.length-1);
             display.value = string;
 
-        }else if(event.target.innerHTML == 'AC'){
+        }else if(btnText == 'AC'){
             string = '';
             display.value = string;
-        }else if(event.target.innerHTML == '='){
+        }else if(btnText == '='){
             string = eval(string);
             display.value = string;
         }
-        else{
-            string += event.target.innerHTML;
+        else {
+
+            if (/[\+\-\*\%\/]/.test(string) && /[\+\-\*\%\/]/.test(btnText)) {
+                string = string.slice(0, -1); 
+            }
+            string += btnText;
             display.value = string;
         }
-
+ 
 
     });
 });
