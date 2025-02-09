@@ -24,7 +24,7 @@ buttonArray.forEach(function(btn) {
         }
         else {
 
-            if (/[\+\-\*\%\/]/.test(string) && /[\+\-\*\%\/]/.test(btnText)) {
+            if (/[\+\-\*\%\/]/.test(string.slice(-1)) && /[\+\-\*\%\/]/.test(btnText)) {
                 string = string.slice(0, -1); 
             }
             string += btnText;
